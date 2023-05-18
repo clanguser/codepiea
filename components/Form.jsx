@@ -16,7 +16,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       >
         <label>
           <span className='font-satoshi font-semibold text-base text-gray-700'>
-            Your Code Snippet
+            Your Code
           </span>
 
           <textarea
@@ -32,7 +32,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
           <span className='font-satoshi font-semibold text-base text-gray-700'>
             Field of Prompt{" "}
             <span className='font-normal'>
-              (#nextjs, #webdevelopment, #idea, etc.)
+              (#product, #webdevelopment, #idea, etc.)
             </span>
           </span>
           <input
@@ -55,7 +55,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             disabled={submitting}
             className='px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white'
           >
-            {submitting ? `${type} ✓` : type}
+            {submitting ? `${type}ing...` : type}
           </button>
         </div>
       </form>

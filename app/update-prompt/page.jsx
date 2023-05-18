@@ -62,5 +62,4 @@ const UpdatePrompt = () => {
     />
   );
 };
-
 export default UpdatePrompt;

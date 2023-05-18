@@ -1,30 +1,28 @@
-import Nav from '@components/Nav'
-import Provider from '@components/Provider'
-import '@styles/global.css'
+import "@styles/globals.css";
+
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 
 export const metadata = {
-    title: "Codepiea",  
-    description: "Discover and Share Codes",
-}
+  title: "Codepiea",
+  description: "Discover & Share Codes",
+};
 
-const RootLayout = ({ children }) => {
-  return (
-    <html lang='en'>
-        <body>
-            <Provider>
-                <div className='main'>
-                    <div className='gradient'/>
-                </div>
+const RootLayout = ({ children }) => (
+  <html lang='en'>
+    <body>
+      <Provider>
+        <div className='main'>
+          <div className='gradient' />
+        </div>
 
-                <main className='app'>
-                    <Nav/>
-                    {children}
-                </main>
-            </Provider>
-            
-        </body>
-    </html>
-  )
-}
+        <main className='app'>
+          <Nav />
+          {children}
+        </main>
+      </Provider>
+    </body>
+  </html>
+);
 
-export default RootLayout
+export default RootLayout;
